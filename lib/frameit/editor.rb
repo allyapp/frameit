@@ -213,7 +213,7 @@ module Frameit
     end
 
     def actual_font_size
-      [@image.width / 10.0].max.round
+      [@image.width / 15.0].max.round
     end
 
     # The space between the keyword and the title
