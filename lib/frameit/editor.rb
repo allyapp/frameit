@@ -186,7 +186,7 @@ module Frameit
         sum_width *= smaller
       end
 
-      title_offset = fetch_config['title_offset']
+      title_offset = [@image.height * fetch_config['title_offset_factor']].max.round
 
       vertical_padding = vertical_frame_padding + title_offset
       top_space = vertical_padding
