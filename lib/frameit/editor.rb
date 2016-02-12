@@ -186,7 +186,9 @@ module Frameit
         sum_width *= smaller
       end
 
-      vertical_padding = vertical_frame_padding
+      title_offset = fetch_config['title_offset']
+
+      vertical_padding = vertical_frame_padding + title_offset
       top_space = vertical_padding
       left_space = (background.width / 2.0 - sum_width / 2.0).round
 
